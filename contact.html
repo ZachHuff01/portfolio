@@ -16,15 +16,15 @@
                 <img class="logo__portait" src="img/zachary-logo1.jpeg" alt="logo" >
                 <nav class="main navigation page-header__item">
                     <ul role="menubar" class="navigation-list">
-                        <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
-                        <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item">About Me</a></li>   
-                        <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a></li>
-                        <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list__item">Work</a></li>
+                        <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item--active">Home</a></li>
+                        <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item--active">About Me</a></li>   
+                        <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a></li>
+                        <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list__item--active">Work</a></li>
                     </ul>
                 </nav>
             </header>
     <h1>Contact</h1>
-    <body>
+    <body class="contact">
         <nav role="menubar">
             <a role="menuitem" href="tel:(555)555-5555">Telephone:(555)555-5555</a><br>
             <!--skype address = place holder-->
@@ -32,16 +32,18 @@
             <a role="menuitem" href="mailto:office@careerfoundry.com">office@careetfoundry.com</a><br>
             <a role="menuitem" href="mailto:office@caeerfoundry.com">Contact Me</a>
         </nav>
-        <form action="" method="post" id="contact-form">
+        <form method="post" id="contact-form">
             <label class="standard-label" for="contact-email">E-mail:</label>
             <input type="email" id="contact-email" required="required">
 
             <label class="standard-label" for="contact-telephone">Telephone:</label>
             <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-            <label class="standard-label" for="contact-message">Message</label>
-            <textarea maxlength="240" id="contact-message" required="required"></textarea>
-
+            
+            <div>
+                <label class="standard-label" for="contact-message">Message</label>
+                <textarea maxlength="240" id="contact-message" required="required"></textarea>
+            </div>
+            
             <input type="submit" value="Send Message">
         </form>
 

@@ -89,7 +89,7 @@ a:visited {
         color: var(--dark-grey);
       } 
 
-  .navigation-list__item {
+  .navigation-list__item--active {
         text-decoration: none;
       }      
     
@@ -112,14 +112,18 @@ a:visited {
        }
     
 
-      .page-footer {
+      .page-footer,
+      .contact,
+      .project {
         text-align: center;
         clear: both;
         display: flex;
         flex-direction:column
       }
 
-      .profile {
+      .profile,
+      .contact,
+      .project {
         max-width: 700px;
         margin: 0 auto;
     
@@ -167,7 +171,7 @@ a:visited {
                  
         }
         .grid_item {
-          background-color: blue;
+          background-color: lightgray;
           width: auto;
           min-height: auto;
           margin: 0;
