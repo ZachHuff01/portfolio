@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.production.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
+        <body class="contact">
             <header class="page-header">
                 <!--add logo here-->
                 <img class="logo__portait" src="img/zachary-logo1.jpeg" alt="logo" >
@@ -24,7 +25,7 @@
                 </nav>
             </header>
     <h1>Contact</h1>
-    <body class="contact">
+    
         <nav role="menubar">
             <a role="menuitem" href="tel:(555)555-5555">Telephone:(555)555-5555</a><br>
             <!--skype address = place holder-->
@@ -32,23 +33,23 @@
             <a role="menuitem" href="mailto:office@careerfoundry.com">office@careetfoundry.com</a><br>
             <a role="menuitem" href="mailto:office@caeerfoundry.com">Contact Me</a>
         </nav>
-        <form method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">E-mail:</label>
-            <input type="email" id="contact-email" required="required">
+            <form method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">E-mail:</label>
+                <input type="email" id="contact-email" required="required">
 
-            <label class="standard-label" for="contact-telephone">Telephone:</label>
-            <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-            
-            <div>
-                <label class="standard-label" for="contact-message">Message</label>
-                <textarea maxlength="240" id="contact-message" required="required"></textarea>
-            </div>
-            
-            <input type="submit" value="Send Message">
-        </form>
+                <label class="standard-label" for="contact-telephone">Telephone:</label>
+                <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                
+                <div>
+                    <label class="standard-label" for="contact-message">Message</label>
+                    <textarea maxlength="240" id="contact-message" required="required"></textarea>
+                </div>
+                
+                <input type="submit" value="Send Message">
+            </form>
 
-        <script src="js/tota11y.min.js"></script>
-    </body>
+            <script src="js/tota11y.min.js"></script>
+        </body>
     <footer class="page-footer">
         <p>Find me on</p> 
         <div class="social-media">
